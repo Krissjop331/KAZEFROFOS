@@ -1,0 +1,14 @@
+{
+    "Index": {
+        "title": "Hello"
+    },
+    "Header": {
+        "home": "Home",
+        "catalog": "catalog",
+        "login": "login",
+        "logout": "logout",
+        "about": "about",
+        "contacts": "contacts",
+        "admin": "admin"
+    }
+}

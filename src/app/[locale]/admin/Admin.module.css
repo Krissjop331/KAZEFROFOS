@@ -1,0 +1,31 @@
+.pageWrapper {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tableContainer {
+  margin-top: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  flex-grow: 1;
+}
+
+.selectContainer {
+  margin-left: 20px;
+}
+
+.activeTab {
+  font-weight: bold;
+  color: blue;
+}

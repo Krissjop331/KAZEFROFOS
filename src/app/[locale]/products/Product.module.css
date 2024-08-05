@@ -1,0 +1,99 @@
+.products {
+  margin-top: 100px;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.productGrid {
+  min-height: 400px; /* Минимальная высота, чтобы предотвратить смещение */
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Убираем фиксированную высоту */
+  margin-bottom: 20px; /* Отступ между карточками */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.imageContainer {
+  height: 250px; /* Фиксированная высота контейнера изображения */
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Сохранение пропорций изображения */
+  transition: transform 0.3s ease;
+}
+
+.productImage:hover {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.productInfo {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.noProducts {
+  margin-top: 20px; /* Добавляем отступ сверху, чтобы текст не съезжал вниз */
+  font-size: 1.2rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .products {
+    margin-top: 100px;
+
+  }
+
+  .filterContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .productName {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .productInfo {
+    font-size: 0.8rem;
+  }
+
+  .imageContainer {
+    height: 200px; /* Уменьшаем высоту изображения для мобильных устройств */
+  }
+}

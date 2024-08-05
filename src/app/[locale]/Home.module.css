@@ -1,0 +1,561 @@
+.home {
+    position: relative;
+    width: 100%;
+    margin-top: -50px;
+    height: 800px;
+    min-height: 900px;
+    z-index: 9;
+    background: url('../../resources/icons/main_home.png') no-repeat center center/cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    max-height: 800px;
+  }
+  
+  .content {
+    text-align: center;
+    color: #1f1f1f;
+    max-width: 600px;
+
+    margin-left: 55%;
+  }
+  
+  .textContent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .logo {
+    margin-top: 100px;
+  }
+  
+  .description {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-left: left;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  .button {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #2f2f2f;
+    border: none;
+    border-radius: 5px;
+    color: #FFAC2F;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: 2px solid transparent;
+  }
+  
+  .button:hover {
+    background-color: #fff; 
+    border: 2px solid #FFAC2F;
+    color: #1f1f1f;
+  }
+
+
+
+
+
+  /* О НАС */
+  
+  .aboutSection {
+    display: grid;
+    position: relative;
+    grid-template-columns: 2fr 1fr  ;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 40px 100px;
+    padding: 20px;
+  }
+
+  /* .aboutSection::before {
+    content: '';
+    position: absolute;
+    background-color: #FFA928;
+    width: 100vw;
+    top: 300px;
+    height: 50%;
+  } */
+  
+  .aboutLeft, .aboutRight {
+    flex: 1;
+    z-index: 10;
+  }
+
+  .aboutLeft {
+    /* background: #FFA928; */
+    border-bottom: 5px solid #1f1f1f;
+
+    .aboutTitle {
+        color: #1f1f1f;
+        padding: 10px;
+        background: #f3f3f3;
+        border-radius: 5px;
+        width: 100%;
+    }
+  }
+  .aboutRight {
+    /* background: #fff;  */
+    border-bottom: 5px solid #1f1f1f;
+    padding-bottom: 20px;
+
+    .aboutTitle {
+      color: #1f1f1f;
+      padding: 10px;
+      background: #f3f3f3;
+      border-radius: 5px;
+    }
+  }
+  
+  .aboutTitle {
+    font-size: 36px;
+    width: 92%;
+    border-bottom: 5px solid #FFAC2F;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #1f1f1f;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 5px;
+  }
+  
+  .aboutLeft {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .aboutText {
+    margin-top: 30px;
+    line-height: 180%;
+    font-weight: normal;
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .aboutText:nth-child(2) {
+    margin-top: 20px;
+  }
+  
+  .aboutButton {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .aboutButton:hover {
+    background-color: #555;
+  }
+  
+  .whyUs {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .whyUsImage {
+    margin-right: 20px;
+  }
+  
+  .whyUsList {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .whyUsList li {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold ;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+
+
+
+
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 60px;
+
+    .aboutTitle {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .container__row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            width: 100%;
+            min-width: 300px;
+            
+            .product {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                color: #fff;
+                background: #fff;
+                border-radius: 5px;
+                padding-top: 20px;
+                min-width: 350px;
+                height: 100%; /* Ensure product card takes full height */
+
+                .product__content {
+                    background: #1f1f1f;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    border-radius: 5px;
+                    padding: 20px 30px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    align-items: center;
+                    text-align: left;
+                    width: 100%; /* Ensure it covers full width */
+                    flex-grow: 1; /* Ensure it takes remaining space */
+                    
+                    .product__contentText {
+                        line-height: 160%;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+  .contacts_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    margin: 60px;
+    margin-bottom: 50px;
+
+    .aboutTitle {
+        font-size: 36px;
+        text-align: center;
+    }   
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    max-width: 600px;
+    margin: 50px 0;
+    margin-bottom: 0;
+    align-items: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #FFA500;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+.textarea {
+    resize: none;
+    height: 150px;
+}
+
+.submitButton {
+    align-self: center;
+    padding: 15px 30px;
+    background-color: #1f1f1f;
+    color: #FFAC2F;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #e59400;
+}
+
+
+.productImage {
+  object-fit: contain;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  text-align: left;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .home {
+    height: 700px;
+    min-height: 700px;
+  }
+
+  .content {
+    margin-left: 55%;
+    
+  }
+
+  .logo {
+    margin-top: 100px;
+    width: 250px;
+    margin-left: -80px;
+    height: auto;
+  }
+
+  .textContent {
+    margin-top: auto;
+    text-align: left;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .description {
+    padding-top: -20px;
+  }
+
+  .aboutSection {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+    margin: 20px;
+  }
+
+
+  .aboutLeft, .aboutRight {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .aboutLeft {
+    .aboutTitle {
+        color: #1f1f1f;
+        font-size: 24px;
+    }
+  }
+  .aboutRight {
+    .aboutTitle {
+      color: #1f1f1f;
+      font-size: 24px;
+    }
+    padding: 0;
+    height: 500px;
+  }
+
+  .aboutTitle {
+    font-size: 36px;
+  }
+
+  .whyUs {
+    margin-left: 20px;
+  }
+
+  .catalog .container .container__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container__row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: 700px;
+    min-height: 700px;
+  }
+
+  .content {
+    margin-left: 55%;
+    padding: 0 20px;
+  }
+
+  .aboutSection {
+    display: block;
+  }
+
+  .logo {
+    width: 350px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .aboutTitle {
+    font-size: 40px;
+    text-align: left;
+  }
+
+
+  .aboutRight {
+    margin-top: 30px; 
+  }
+
+
+  .whyUsList {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .catalog .container .container__row {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog .container .container__row .product {
+    min-width: unset;
+  }
+
+  .contacts_about {
+    padding: 0;
+    margin: 0;
+
+    .aboutTitle {
+      text-align: center;
+    }
+  }
+
+  .contactForm {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    height: 600px;
+    min-height: 600px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .content {
+    margin-left: 50%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+    width: 120px;
+    height: 35px;
+  }
+
+  .aboutSection {
+    display: block;
+  }
+
+  .aboutTitle {
+    font-size: 30px;
+  }
+
+  .aboutText {
+    font-size: 14px;
+  }
+
+  .whyUsList li {
+    font-size: 14px;
+  }
+
+  .contactForm {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .input, .textarea, .submitButton {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,215 @@
+.pageWrapper {
+  min-height: 80vh;
+  box-sizing: border-box;
+  margin: 100px;
+  padding: 50px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.imageColumn, .infoColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.infoColumn {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: start;
+}
+
+.imageWrapper {
+  position: relative;
+  height: auto;
+  background-color: #e0e0e0;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #1f1f1f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imageNavigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navButton {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #1f1f1f;
+  font-size: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover, .activeThumbnail {
+  border-color: #1f1f1f;
+}
+
+.productName {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.productDescription {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.button {
+  width: 40%;
+  display: flex;
+  min-width: 200px;
+  gap: 20px;
+  padding: 20px;
+  background: #FFA928;
+  color: #1f1f1f;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.button {
+  width: 40%;
+  display: flex;
+  min-width: 200px;
+  gap: 20px;
+  padding: 20px;
+  background: #FFA928;
+  color: #1f1f1f;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  background-color: #FFA928;
+}
+
+.button:hover {
+  border-color: #1f1f1f;
+}
+
+.characteristicsSection {
+  margin-top: 50px;
+}
+
+.characteristicsBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #FFA928;
+  padding-bottom: 5px;
+}
+
+.characteristicsTitle {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.characteristicsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.characteristicItem {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dialog {
+  z-index: 9999;
+
+}
+
+.dialogTitle {
+  text-align: center;
+}
+
+.dialogContent {
+  text-align: center;
+}
+
+.buttonDialog {
+  background: #FFA928;
+  color: #1f1f1f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.strong {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.lines {
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 10px;
+}
+
+.p {
+  margin-left: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .pageWrapper {
+    margin: 100px 0;
+  }
+
+  .infoColumn {
+    margin: 0;
+  }
+}

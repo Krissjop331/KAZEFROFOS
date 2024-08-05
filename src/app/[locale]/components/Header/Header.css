@@ -1,0 +1,130 @@
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    .menu-language {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 50px;
+
+        .languages {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+        button {
+            padding: 0;
+            margin: 0;
+            min-width: 35px;
+            min-height: 30px;
+            border-radius: 50px;
+
+            img {
+                margin-top: 8px;
+            }
+        }
+        button:hover {
+            background: #eee;
+        }
+
+        .small-contacts {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .icon:nth-child(1) {
+                width: 10px;
+                height: 21px;   
+                margin-top: 1px;
+            }
+            .icons {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+    }
+
+    /* MAIN_MENU */
+    nav.header {
+        background: #1f1f1f;
+        color: #eee;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        padding: 10px 50px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        .desk-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+    }
+
+    nav.header .active {
+        color: orange;
+        font-weight: bold;
+        font-size: 15px;
+        transition: all .3s ease;
+    }
+
+    nav.header .active:hover {
+        font-size: 13.5px;
+        transition: all .3s ease;
+        background: #292929;
+    }
+
+    @media (max-width: 768px) {
+        .menu-language {
+            padding: 5px 20px;
+
+            .small-txt {
+                font-size: 12px;
+            }
+
+            .small-contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                width: 50%;
+                margin-bottom: 10px;
+            }
+        }
+        nav.header div {
+            flex-direction: column;
+        }
+        .desk-menu {
+            display: none;
+        }
+        .menu-icon {
+            display: block;
+        }
+    }
+}
+
+
+header .active {
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+  }

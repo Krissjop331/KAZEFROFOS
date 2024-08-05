@@ -1,0 +1,290 @@
+/* General Styles */
+.home {
+  position: relative;
+  width: 100%;
+  margin-top: -50px;
+  height: 800px;
+  min-height: 900px;
+  z-index: 9;
+  background: url('../../../resources/Frame home-main.svg') no-repeat center center/cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  max-height: 800px;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 100px;
+}
+
+/* О НАС */
+.aboutSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  gap: 50px;
+}
+
+.aboutLeft, .aboutRight {
+  flex: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutSection {
+    flex-direction: column;
+  }
+  .whyUsImage {
+    max-height: 100%;
+  }
+
+  
+  .history_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .history__company_left,
+  .history__company_right {
+    gap: 50px;
+  }
+  .history__company_left {
+    display: flex;
+    flex-direction: column;
+  }
+  .history__company_right {
+    margin-top: 30px;
+  }
+
+  .history__company_center {
+    display: none;
+  }
+}
+
+.aboutTitle {
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutLeft {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.aboutText {
+  margin-top: 30px;
+  line-height: 180%;
+  max-width: 800px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.aboutText2 {
+  margin-top: 30px;
+  line-height: 180%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.whyUs {
+  display: flex;
+}
+
+.whyUsImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* HISTORY */
+.history__company {
+  /* display: flex; */
+  padding: 50px;
+  background: #fff;
+}
+
+.history_container {
+  display: flex;
+  justify-content: center;
+  gap: 5%; /* background: #fff; */
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1305px) {
+  .history__company_right {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .history__company_left {
+    gap: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* .history__company_center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.content {
+  color: #1f1f1f;
+
+  .aboutTitle {
+    text-align: left;
+  }
+
+  .aboutText {
+    text-align: left;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 700px;
+  }
+
+  
+}
+
+/* PRIVELEGY */
+.privelegyes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.privelegy__container {
+  display: grid;
+  gap: 30px;
+
+  margin: 0px 8%;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.privelegyIcons {
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+}
+
+.privelegy {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  min-width: 200px;
+  gap: 30px;
+  align-items: center;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.privelegy_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privelegyTitle {
+  font-weight: bold;
+}
+
+.privelegyText,
+.privelegyTitle {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 180%;
+  max-width: 800px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .home {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .logo {
+    width: 40%;
+    margin-top: -100px;
+    height: auto;
+  }
+
+  .aboutSection {
+    flex-direction: column;
+  }
+
+  .aboutLeft, .aboutRight {
+    padding: 20px;
+  }
+
+  .aboutText {
+    font-size: 16px;
+  }
+
+  .whyUs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whyUsImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .history__company {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .history__company_left,
+  .history__company_right {
+    gap: 20px;
+  }
+
+  .history__company_center {
+    display: none;
+  }
+
+  .privelegy__container {
+    grid-template-columns: 1fr;
+  }
+
+  .privelegyIcons {
+    margin-left: 0;
+  }
+}
